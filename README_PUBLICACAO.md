@@ -51,3 +51,11 @@ Teste:
 
 ## Observação
 As fotografias originais foram mantidas sem alteração facial ou corporal. O recorte é feito apenas pelo CSS.
+
+
+## Atualização V2 — Google Analytics e formulário
+
+- Google Analytics 4 instalado em todas as páginas: `G-77NCVJWX3P`.
+- Formulário de contato atualizado com seleção de assunto.
+- Envio continua sendo feito pelo WhatsApp, com a mensagem pronta para revisão.
+- Eventos registrados no Analytics: `generate_lead`, `whatsapp_click` e `outbound_click`.

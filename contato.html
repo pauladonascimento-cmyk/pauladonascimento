@@ -16,6 +16,14 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-77NCVJWX3P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-77NCVJWX3P');
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -74,6 +82,20 @@
   <form class="contact-form reveal whatsapp-form" data-interest="Contato pelo site">
     <label>Nome completo<input type="text" name="nome" placeholder="Seu nome" required></label>
     <label>WhatsApp<input type="tel" name="telefone" placeholder="Seu WhatsApp" required></label>
+    <label>Assunto
+      <select name="assunto" required>
+        <option value="" selected disabled>Selecione o assunto</option>
+        <option value="Psicoterapia Individual">Psicoterapia Individual</option>
+        <option value="Terapia de Casal">Terapia de Casal</option>
+        <option value="Terapia Familiar">Terapia Familiar</option>
+        <option value="Supervisão Clínica">Supervisão Clínica</option>
+        <option value="Formação em Casal e Família">Formação em Casal e Família</option>
+        <option value="Curso Gravado de Introdução à Gestalt-terapia">Curso Gravado de Introdução à Gestalt-terapia</option>
+        <option value="Convite para palestra, aula ou evento">Convite para palestra, aula ou evento</option>
+        <option value="Pesquisa, entrevista ou parceria institucional">Pesquisa, entrevista ou parceria institucional</option>
+        <option value="Outro assunto">Outro</option>
+      </select>
+    </label>
     <label>E-mail<input type="email" name="email" placeholder="Seu e-mail"></label>
     <label>Mensagem<textarea name="mensagem" rows="5" placeholder="Conte brevemente o que você procura" required></textarea></label>
     <button class="button primary full" type="submit">Enviar pelo WhatsApp</button>
