@@ -1,0 +1,360 @@
+/* Página interna — Psicoterapia Individual
+   Complementa o style.css principal do site.
+*/
+
+.internal-header {
+  background: rgba(251, 248, 242, 0.96);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 10px 35px rgba(14, 42, 71, 0.07);
+}
+
+.internal-hero {
+  min-height: 92vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, .75fr);
+  gap: clamp(34px, 6vw, 90px);
+  align-items: center;
+  padding: 150px clamp(22px, 5vw, 74px) 90px;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(223, 245, 235, .65), transparent 32%),
+    linear-gradient(135deg, var(--sand-100), var(--white));
+}
+
+.internal-hero-copy {
+  max-width: 830px;
+}
+
+.breadcrumb {
+  margin-bottom: 30px;
+  color: var(--gray-500);
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+.breadcrumb span {
+  margin: 0 8px;
+  color: var(--gold-500);
+}
+
+.internal-hero h1 {
+  margin: 0 0 18px;
+  font-family: var(--serif);
+  color: var(--blue-950);
+  font-size: clamp(3.4rem, 7vw, 7rem);
+  line-height: .92;
+  letter-spacing: -0.05em;
+}
+
+.internal-hero h2 {
+  max-width: 760px;
+  margin-bottom: 26px;
+  font-family: var(--serif);
+  color: var(--blue-600);
+  font-size: clamp(2rem, 3.6vw, 4.3rem);
+  line-height: .98;
+}
+
+.internal-hero p {
+  max-width: 700px;
+  color: var(--gray-700);
+  font-size: 1.08rem;
+}
+
+.internal-hero .lead {
+  font-size: clamp(1.15rem, 1.5vw, 1.38rem);
+  color: var(--gray-900);
+}
+
+.internal-hero-photo {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.internal-hero-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.statement-section,
+.content-section,
+.signature-section {
+  padding: clamp(82px, 9vw, 135px) clamp(22px, 5vw, 74px);
+}
+
+.statement-section {
+  background: var(--white);
+}
+
+.statement {
+  max-width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.statement h2,
+.section-heading h2,
+.dark-content h2,
+.pain-grid h2,
+.signature-card blockquote {
+  font-family: var(--serif);
+  color: var(--blue-950);
+  font-size: clamp(2.6rem, 5vw, 5.8rem);
+  line-height: .94;
+  letter-spacing: -0.045em;
+}
+
+.statement p,
+.text-columns p,
+.section-note,
+.pain-copy p,
+.signature-card p {
+  color: var(--gray-700);
+  font-size: clamp(1.04rem, 1.25vw, 1.22rem);
+}
+
+.highlight-quote {
+  margin-top: 42px;
+  padding-top: 34px;
+  border-top: 1px solid rgba(198,155,90,.36);
+  font-family: var(--serif);
+  color: var(--blue-950) !important;
+  font-size: clamp(1.7rem, 2.6vw, 2.8rem) !important;
+  line-height: 1.1;
+}
+
+.soft-section {
+  background: var(--sand-100);
+}
+
+.section-heading {
+  max-width: 940px;
+  margin-bottom: 48px;
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 42px;
+  max-width: 1180px;
+}
+
+.reason-grid article {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 18px;
+  align-items: start;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(14,42,71,.14);
+}
+
+.reason-grid span {
+  font-family: var(--serif);
+  color: var(--gold-500);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.reason-grid p {
+  margin: 0;
+  color: var(--gray-700);
+  font-size: 1.04rem;
+}
+
+.section-note {
+  max-width: 830px;
+  margin: 48px 0 0;
+  padding-left: 26px;
+  border-left: 3px solid var(--gold-500);
+}
+
+.two-column-section {
+  background: var(--white);
+}
+
+.text-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(28px, 6vw, 90px);
+  max-width: 1140px;
+}
+
+.dark-section {
+  background:
+    radial-gradient(circle at 82% 14%, rgba(198,155,90,.18), transparent 34%),
+    linear-gradient(135deg, var(--blue-950), #071b2f);
+}
+
+.dark-content {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.dark-content h2,
+.dark-content p {
+  color: var(--white);
+}
+
+.dark-content p {
+  color: rgba(255,255,255,.82);
+}
+
+.pain-section {
+  background: linear-gradient(135deg, var(--rose-100), var(--sand-100));
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(40px, 8vw, 120px);
+}
+
+.signature-section {
+  background: var(--white);
+}
+
+.signature-card {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: clamp(34px, 6vw, 78px);
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 86% 12%, rgba(223,245,235,.8), transparent 34%),
+    var(--sand-100);
+  box-shadow: var(--shadow-soft);
+}
+
+.signature-card blockquote {
+  margin: 8px 0 34px;
+}
+
+.practical-section {
+  background: var(--sand-100);
+}
+
+.practical-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.practical-grid article {
+  padding: 28px;
+  border: var(--border);
+  border-radius: var(--radius-md);
+  background: var(--white);
+}
+
+.practical-grid h3 {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+}
+
+.practical-grid p {
+  color: var(--gray-700);
+}
+
+.faq-section {
+  background: var(--white);
+}
+
+.faq-list {
+  max-width: 980px;
+}
+
+.faq-list details {
+  border-bottom: 1px solid rgba(14,42,71,.16);
+}
+
+.faq-list summary {
+  position: relative;
+  padding: 26px 46px 26px 0;
+  color: var(--blue-950);
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 24px;
+  color: var(--gold-500);
+  font-family: var(--sans);
+  font-size: 1.8rem;
+}
+
+.faq-list details[open] summary::after {
+  content: "−";
+}
+
+.faq-list details p {
+  max-width: 780px;
+  padding: 0 0 26px;
+  color: var(--gray-700);
+}
+
+.internal-contact {
+  background: linear-gradient(135deg, var(--sand-200), var(--white));
+}
+
+@media (max-width: 1020px) {
+  .internal-hero,
+  .pain-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .internal-hero {
+    padding-top: 130px;
+  }
+
+  .internal-hero-photo {
+    max-width: 620px;
+  }
+
+  .practical-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .internal-hero {
+    min-height: auto;
+    padding: 118px 20px 64px;
+  }
+
+  .internal-hero h1 {
+    font-size: clamp(3rem, 15vw, 4.6rem);
+  }
+
+  .internal-hero h2 {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+  }
+
+  .statement-section,
+  .content-section,
+  .signature-section {
+    padding: 70px 20px;
+  }
+
+  .reason-grid,
+  .text-columns,
+  .practical-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reason-grid article {
+    grid-template-columns: 44px 1fr;
+  }
+}
